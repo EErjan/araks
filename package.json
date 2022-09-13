@@ -1,0 +1,23 @@
+{
+  "name": "araks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass scss/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EErjan/araks.git"
+  },
+  "author": "Erjan Ergashev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EErjan/araks/issues"
+  },
+  "homepage": "https://github.com/EErjan/araks#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}
