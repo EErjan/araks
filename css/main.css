@@ -297,7 +297,7 @@ ul li {
 .product__category {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
 }
 .product__category-item {
@@ -306,20 +306,29 @@ ul li {
   border-radius: 6px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   gap: 20px;
 }
 .product__category-photo {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product__category-photo img {
   position: relative;
   z-index: 1;
-  width: 320px;
+  width: 180px;
   height: auto;
   object-fit: contain;
 }
 .product__category-content {
   min-width: 150px;
+}
+.product__category-content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 }
 
 :root {
