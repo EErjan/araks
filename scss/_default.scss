@@ -19,17 +19,19 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+  color: var(--color-text);
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, a {
   padding: 0;
   margin: 0;
-  color: var(--color-text) !important;
+
 }
 
 a, a:hover, a:focus, a:active {
   color: var(--color-text);
-  text-decoration: none;
+  text-decoration: none !important;
   outline: none;
 }
 
@@ -54,16 +56,6 @@ ul li {
   margin-bottom: 0;
 }
 
-.container {
-  width: 100%;
-  max-width: 1360px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding-left: 15px;
-  padding-right: 15px;
-  overflow: visible;
-}
 
 /* width */
 ::-webkit-scrollbar {

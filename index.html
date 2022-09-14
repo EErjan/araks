@@ -28,12 +28,15 @@
                 <div class="header__contacts">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                     <div>
-                        <span>Звонок бесплатный:</span>
+                        <p>Звонок бесплатный:</p>
                         <a href="tel:555012626">(55)-501-26-26</a>
                     </div>
 
 
                 </div>
+
+                <a href="#!" class="btn-main">Заказать звонок</a>
+
             </div>
         </div>
         <div class="header__bottom">
@@ -79,6 +82,126 @@
 </header>
 
 
+<div class="container">
+    <div class="main__banner">
+
+        <div class="splide main__slider" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide main__slider-item"
+                         style="background-image: url('img/main-slider/main-slider-1.jpg')"
+                    >
+
+                        <div class="main__slider-content">
+                            <h1 class="hero-text">
+                                Мы строим вашу мечту. Для комфортной жизни.
+                            </h1>
+                        </div>
+
+                    </div>
+
+                    <div class="splide__slide main__slider-item"
+                         style="background-image: url('img/main-slider/main-slider-2.jpg')"
+                    >
+
+                        <div class="main__slider-content">
+                            <h1 class="hero-text">
+                                Мы строим вашу мечту. Для комфортной жизни.
+                            </h1>
+                        </div>
+
+                    </div>
+
+                    <div class="splide__slide main__slider-item"
+                         style="background-image: url('img/main-slider/main-slider-3.jpg')"
+                    >
+
+                        <div class="main__slider-content">
+                            <h1 class="hero-text">
+                                Мы строим вашу мечту. Для комфортной жизни.
+                            </h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section we-offer">
+
+        <div class="section__top">
+            <h2 class="section__title">Мы предлагаем</h2>
+            <h5 class="section__subtitle">Строительные и отделочные материалы с доставкой по России</h5>
+        </div>
+
+        <div class="section__body product__category">
+            <div class="product__category-item">
+                <div class="product__category-photo">
+                    <img src="img/product.png" alt="product">
+                </div>
+
+                <div class="product__category-content">
+                    <h4>Электрический Продукции</h4>
+                </div>
+            </div>
+
+            <div class="product__category-item">
+                <div class="product__category-photo">
+                    <img src="img/product.png" alt="product">
+                </div>
+
+                <div class="product__category-content">
+                    <h4>Шпатели</h4>
+                </div>
+            </div>
+
+            <div class="product__category-item">
+                <div class="product__category-photo">
+                    <img src="img/product.png" alt="product">
+                </div>
+
+                <div class="product__category-content">
+                    <h4>Малярные Валики</h4>
+                </div>
+            </div>
+
+            <div class="product__category-item">
+                <div class="product__category-photo">
+                    <img src="img/product.png" alt="product">
+                </div>
+
+                <div class="product__category-content">
+                    <h4>Малярные Валики</h4>
+                </div>
+            </div>
+
+            <div class="product__category-item">
+                <div class="product__category-photo">
+                    <img src="img/product.png" alt="product">
+                </div>
+
+                <div class="product__category-content">
+                    <h4>Металлические Щетки</h4>
+                </div>
+            </div>
+
+            <div class="product__category-item">
+                <div class="product__category-photo">
+                    <img src="img/product.png" alt="product">
+                </div>
+
+                <div class="product__category-content">
+                    <h4>Мухоловка</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+
 <script src="libs/jquery-3.2.1.min.js"></script>
 <script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
 <script src="libs/jquery.matchHeight.js"></script>
@@ -88,6 +211,23 @@
 <script src="libs/inputMask.min.js"></script>
 <script src="libs/splide-slider/js/splide.min.js"></script>
 <script src="libs/parallax/jquery.parallax.min.js"></script>
+
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let main__slider = new Splide('.main__slider', {
+            type: 'loop',
+            arrows: true,
+            // autoplay: 'true',
+            interval: 5000,
+            gap: 30
+        });
+
+        main__slider.mount();
+
+    });
+</script>
 
 </body>
 </html>
