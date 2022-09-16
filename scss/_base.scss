@@ -286,6 +286,10 @@
   &__body {
     margin-top: 50px;
   }
+
+  &__bg {
+    background-color: #f7f7f7;
+  }
 }
 
 .we-offer {
@@ -341,3 +345,26 @@
   }
 }
 
+.popular-goods {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+  &__photo {
+
+  }
+
+  &__content {
+    h4 {
+
+    }
+
+    span {
+      b {
+
+      }
+    }
+  }
+}

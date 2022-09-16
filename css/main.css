@@ -293,6 +293,9 @@ ul li {
 .section__body {
   margin-top: 50px;
 }
+.section__bg {
+  background-color: #f7f7f7;
+}
 
 .product__category {
   width: 100%;
@@ -335,6 +338,12 @@ ul li {
   font-weight: 700;
   text-align: center;
   color: var(--color-text);
+}
+
+.popular-goods {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 :root {
