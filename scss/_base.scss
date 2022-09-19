@@ -125,6 +125,19 @@
   }
 }
 
+.hamburger-menu {
+  display: none;
+  border: none;
+  background-color: transparent;
+  outline: none !important;
+  margin-left: 30px;
+
+  .fa {
+    color: var(--color-main);
+    font-size: 28px;
+  }
+}
+
 .btn {
   &-main {
     display: inline-flex;
@@ -169,7 +182,7 @@
 
 .main {
   &__banner {
-    margin-top: 50px;
+    margin-top: 70px;
     border-radius: 16px;
     overflow-x: hidden;
 
@@ -420,7 +433,7 @@
 }
 
 .promotion {
-  &__wrap {
+  &__body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -839,6 +852,10 @@
     justify-content: space-between;
     gap: 30px;
     width: 100%;
+
+    a {
+      color: var(--color-text) !important;
+    }
   }
 
   &__column {

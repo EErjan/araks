@@ -4,25 +4,326 @@
   }
 }
 
+@media (max-width: 1450px) {
+  .card {
+    padding: 20px;
+  }
+
+  .popular-goods {
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    &__top {
+
+    }
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__subtitle {
+      margin-top: 10px;
+    }
+  }
+
+  .card {
+    &__content {
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        b {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+}
 
 @media (max-width: 991px) {
+
+  .main__slider {
+    &-content {
+      padding: 4rem;
+      min-height: 380px;
+
+      .hero-text {
+        font-size: 32px;
+      }
+    }
+
+    &:hover {
+      .splide__arrow {
+        width: 40px;
+        height: 40px;
+
+        &--next {
+          right: 0;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
+        &--prev {
+          left: 0;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+
+    }
+  }
+
+  .section {
+    padding: 70px 0;
+
+    &__body {
+      margin-top: 50px;
+    }
+  }
+
+  .product__category {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .popular-goods {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+
+  }
+
+  .promotion {
+    &__item {
+      min-height: 300px;
+
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
 
 }
 
 @media (max-width: 768px) {
+  .header {
+
+    &__top {
+      padding: 15px 0;
+    }
+
+    &__details {
+
+      .btn-main {
+        display: none;
+      }
+    }
+
+    &__bottom {
+      display: none;
+    }
+
+    &__contacts {
+      margin-right: 0;
+    }
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .main__banner {
+    margin-top: 30px;
+  }
+
+  .main__slider {
+    &-content {
+      min-height: 300px;
+
+      .hero-text {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .section {
+    padding: 50px 0;
+
+    &__title {
+      font-size: 36px;
+    }
+
+  }
+
+  .promotion {
+
+    &__body {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      min-height: 300px;
+
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
 
 }
 
 @media (max-width: 650px) {
+  .container {
+    padding: 0 20px !important;
+  }
 
+  .main__slider {
+    &-content {
+      min-height: 250px;
+      padding: 3rem;
+
+      .hero-text {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .product__category {
+    grid-gap: 20px;
+
+    &-photo {
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  .section {
+    &__body {
+      margin-top: 30px;
+    }
+  }
 }
 
 @media (max-width: 500px) {
 
+  .header {
+    .logo {
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  .hamburger-menu {
+    margin-left: 20px;
+  }
+
+
+  .section {
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__subtitle {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+  }
+
+  .product__category {
+
+    &-photo {
+      img {
+        width: 120px;
+      }
+    }
+
+    &-content h4 {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .section {
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+  }
+
+  .main__slider {
+    margin-bottom: 10px;
+  }
+
+  .product__category {
+    grid-template-columns: 1fr;
+
+    &-item {
+      max-width: 280px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &-photo {
+      img {
+        max-width: 150px;
+        width: 100%;
+      }
+    }
+  }
+
+  .popular-goods {
+    grid-template-columns: 1fr;
+
+    .card {
+      max-width: 280px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 @media (max-width: 380px) {
 
+  .section {
+    padding: 30px 0;
+
+    &__title {
+      font-size: 26px;
+    }
+
+  }
+
+
+  .header {
+    &__contacts {
+      display: none;
+    }
+  }
 }
 
 

@@ -169,6 +169,18 @@ ul li {
   height: 100%;
 }
 
+.hamburger-menu {
+  display: none;
+  border: none;
+  background-color: transparent;
+  outline: none !important;
+  margin-left: 30px;
+}
+.hamburger-menu .fa {
+  color: var(--color-main);
+  font-size: 28px;
+}
+
 .btn-main {
   display: inline-flex;
   padding: 10px 25px;
@@ -205,7 +217,7 @@ ul li {
 }
 
 .main__banner {
-  margin-top: 50px;
+  margin-top: 70px;
   border-radius: 16px;
   overflow-x: hidden;
 }
@@ -398,7 +410,7 @@ ul li {
   font-weight: bold;
 }
 
-.promotion__wrap {
+.promotion__body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -729,6 +741,9 @@ ul li {
   gap: 30px;
   width: 100%;
 }
+.footer__bottom a {
+  color: var(--color-text) !important;
+}
 .footer__column {
   flex: 1;
 }
@@ -796,6 +811,203 @@ ul li {
 @media (min-width: 1450px) {
   .container {
     max-width: 1320px !important;
+  }
+}
+@media (max-width: 1450px) {
+  .card {
+    padding: 20px;
+  }
+  .popular-goods {
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .section__title {
+    font-size: 42px;
+  }
+  .section__subtitle {
+    margin-top: 10px;
+  }
+  .card__content h4 {
+    font-size: 16px;
+  }
+  .card__content p b {
+    font-size: 22px;
+  }
+}
+@media (max-width: 991px) {
+  .main__slider-content {
+    padding: 4rem;
+    min-height: 380px;
+  }
+  .main__slider-content .hero-text {
+    font-size: 32px;
+  }
+  .main__slider:hover .splide__arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .main__slider:hover .splide__arrow--next {
+    right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .main__slider:hover .splide__arrow--prev {
+    left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .section {
+    padding: 70px 0;
+  }
+  .section__body {
+    margin-top: 50px;
+  }
+  .product__category {
+    grid-template-columns: 1fr 1fr;
+  }
+  .popular-goods {
+    grid-template-columns: 1fr 1fr;
+  }
+  .promotion__item {
+    min-height: 300px;
+  }
+  .promotion__item h2 {
+    font-size: 24px;
+  }
+  .promotion__item p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .header__top {
+    padding: 15px 0;
+  }
+  .header__details .btn-main {
+    display: none;
+  }
+  .header__bottom {
+    display: none;
+  }
+  .header__contacts {
+    margin-right: 0;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .main__banner {
+    margin-top: 30px;
+  }
+  .main__slider-content {
+    min-height: 300px;
+  }
+  .main__slider-content .hero-text {
+    font-size: 26px;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .section__title {
+    font-size: 36px;
+  }
+  .promotion__body {
+    grid-template-columns: 1fr;
+  }
+  .promotion__item {
+    min-height: 300px;
+  }
+  .promotion__item h2 {
+    font-size: 24px;
+  }
+  .promotion__item p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    padding: 0 20px !important;
+  }
+  .main__slider-content {
+    min-height: 250px;
+    padding: 3rem;
+  }
+  .main__slider-content .hero-text {
+    font-size: 24px;
+  }
+  .product__category {
+    grid-gap: 20px;
+  }
+  .product__category-photo img {
+    width: 150px;
+  }
+  .section__body {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .header .logo img {
+    width: 100px;
+  }
+  .hamburger-menu {
+    margin-left: 20px;
+  }
+  .section__title {
+    font-size: 28px;
+  }
+  .section__subtitle {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .product__category-photo img {
+    width: 120px;
+  }
+  .product__category-content h4 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 450px) {
+  .section__title {
+    text-align: center;
+  }
+  .section__subtitle {
+    text-align: center;
+  }
+  .main__slider {
+    margin-bottom: 10px;
+  }
+  .product__category {
+    grid-template-columns: 1fr;
+  }
+  .product__category-item {
+    max-width: 280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product__category-photo img {
+    max-width: 150px;
+    width: 100%;
+  }
+  .popular-goods {
+    grid-template-columns: 1fr;
+  }
+  .popular-goods .card {
+    max-width: 280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 380px) {
+  .section {
+    padding: 30px 0;
+  }
+  .section__title {
+    font-size: 26px;
+  }
+  .header__contacts {
+    display: none;
   }
 }
 @keyframes topToBottom {
