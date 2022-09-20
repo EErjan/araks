@@ -13,18 +13,16 @@ try {
 }
 
 
-//
-// $(document).on('click', '.hamburger-menu', function () {
-//     $('.navigation-drawer').addClass('active');
-//     $('.backdrop').css('display', 'block');
-//
-// });
-//
-//
-// $(document).on('click', '.backdrop', function () {
-//     $('.navigation-drawer').removeClass('active');
-//     $(this).css('display', 'none');
-// });
+$(document).on('click', '.hamburger-menu', function () {
+    $('.navigation__drawer').toggleClass('active');
+    $('.backdrop').toggleClass('active');
+});
+
+
+$(document).on('click', '.backdrop', function () {
+    $('.navigation__drawer').removeClass('active');
+    $(this).removeClass('active');
+});
 
 
 try {

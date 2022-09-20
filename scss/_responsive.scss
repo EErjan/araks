@@ -7,6 +7,10 @@
 @media (max-width: 1450px) {
   .card {
     padding: 20px;
+
+    &__photo {
+      padding: 0 10px;
+    }
   }
 
   .popular-goods {
