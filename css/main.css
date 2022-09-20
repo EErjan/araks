@@ -809,7 +809,7 @@ ul li {
   z-index: 100;
   top: 0;
   left: -100%;
-  max-width: 500px;
+  max-width: 350px;
   width: 100%;
   min-height: 100%;
   background-color: var(--color-main);
@@ -1157,6 +1157,9 @@ ul li {
   }
   .blog__item-photo img {
     object-fit: contain;
+  }
+  .navigation__drawer {
+    max-width: 80%;
   }
 }
 @media (max-width: 380px) {
