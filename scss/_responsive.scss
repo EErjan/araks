@@ -238,13 +238,6 @@
       grid-template-columns: 1fr;
       grid-gap: 30px;
     }
-
-    &__column {
-      .btn-white {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
   }
 
   .feedback {
@@ -308,9 +301,6 @@
 }
 
 @media (max-width: 650px) {
-  .container {
-    padding: 0 20px !important;
-  }
 
   .main__slider {
     &-content {
@@ -396,7 +386,7 @@
 
   .blog {
     &__body {
-      grid-gap: 20px;
+      grid-gap: 30px;
     }
 
     &__item {
@@ -413,6 +403,10 @@
 }
 
 @media (max-width: 450px) {
+
+  .container {
+    padding: 0 20px !important;
+  }
 
   .section {
     &__title {
@@ -433,13 +427,11 @@
     grid-template-columns: 1fr;
 
     &-item {
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
     }
 
     &-photo {
       img {
-        max-width: 150px;
         width: 100%;
       }
     }
@@ -449,8 +441,7 @@
     grid-template-columns: 1fr;
 
     .card {
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
     }
   }
 

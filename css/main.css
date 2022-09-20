@@ -957,10 +957,6 @@ ul li {
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
-  .questions__column .btn-white {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .feedback__body {
     grid-template-columns: 1fr;
   }
@@ -992,9 +988,6 @@ ul li {
   }
 }
 @media (max-width: 650px) {
-  .container {
-    padding: 0 20px !important;
-  }
   .main__slider-content {
     min-height: 250px;
     padding: 3rem;
@@ -1040,13 +1033,16 @@ ul li {
     line-height: 1.4;
   }
   .blog__body {
-    grid-gap: 20px;
+    grid-gap: 30px;
   }
   .blog__item-photo {
     height: 150px;
   }
 }
 @media (max-width: 450px) {
+  .container {
+    padding: 0 20px !important;
+  }
   .section__title {
     text-align: center;
   }
@@ -1061,19 +1057,16 @@ ul li {
     grid-template-columns: 1fr;
   }
   .product__category-item {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
   .product__category-photo img {
-    max-width: 150px;
     width: 100%;
   }
   .popular-goods {
     grid-template-columns: 1fr;
   }
   .popular-goods .card {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
   .advantages__body {
     margin-top: 50px;
