@@ -612,6 +612,7 @@ ul li {
   border-style: solid;
   border-width: 25px 25px 0 25px;
   border-color: #ffffff transparent transparent transparent;
+  z-index: 0;
 }
 .feedback__item-content::after {
   content: "\f10d";
@@ -625,6 +626,8 @@ ul li {
   opacity: 0.5;
 }
 .feedback__item-content p {
+  position: relative;
+  z-index: 2;
   font-size: 16px;
 }
 .feedback__item-author {
@@ -726,6 +729,7 @@ ul li {
 }
 .footer__top {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   gap: 50px;
@@ -738,7 +742,7 @@ ul li {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: 0 10px;
   width: 100%;
 }
 .footer__bottom a {
@@ -820,6 +824,9 @@ ul li {
   .popular-goods {
     grid-gap: 20px;
   }
+  .questions__column .section__title {
+    font-size: 42px;
+  }
 }
 @media (max-width: 1200px) {
   .section__title {
@@ -833,6 +840,15 @@ ul li {
   }
   .card__content p b {
     font-size: 22px;
+  }
+  .questions__column .section__title {
+    font-size: 36px;
+  }
+  .blog__item {
+    flex-direction: column;
+  }
+  .blog__item-photo {
+    width: 100%;
   }
 }
 @media (max-width: 991px) {
@@ -878,6 +894,21 @@ ul li {
   .promotion__item p {
     font-size: 16px;
   }
+  .advantages__body {
+    grid-template-columns: 1fr;
+  }
+  .questions .form-control {
+    font-size: 16px;
+  }
+  .questions .btn-white {
+    padding: 10px 30px;
+  }
+  .feedback__body {
+    grid-template-columns: 1fr 1fr;
+  }
+  .feedback__item-content {
+    min-height: 200px;
+  }
 }
 @media (max-width: 768px) {
   .header__top {
@@ -922,6 +953,43 @@ ul li {
   .promotion__item p {
     font-size: 16px;
   }
+  .questions__body {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .questions__column .btn-white {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feedback__body {
+    grid-template-columns: 1fr;
+  }
+  .feedback__item-content {
+    min-height: unset;
+  }
+  .blog__body {
+    grid-gap: 30px;
+  }
+  .blog__item-photo {
+    height: 180px;
+    min-width: unset;
+  }
+  .blog__item-title {
+    font-size: 20px;
+  }
+  .footer__top {
+    gap: 30px;
+    padding: 50px 0 30px;
+  }
+  .footer__column {
+    min-width: 100%;
+  }
+  .footer__item-title {
+    font-size: 14px;
+  }
+  .footer__item-text {
+    font-size: 16px;
+  }
 }
 @media (max-width: 650px) {
   .container {
@@ -942,6 +1010,12 @@ ul li {
   }
   .section__body {
     margin-top: 30px;
+  }
+  .advantages__grid {
+    grid-gap: 20px;
+  }
+  .advantages__item-title {
+    font-size: 18px;
   }
 }
 @media (max-width: 500px) {
@@ -965,6 +1039,12 @@ ul li {
     font-size: 16px;
     line-height: 1.4;
   }
+  .blog__body {
+    grid-gap: 20px;
+  }
+  .blog__item-photo {
+    height: 150px;
+  }
 }
 @media (max-width: 450px) {
   .section__title {
@@ -972,6 +1052,7 @@ ul li {
   }
   .section__subtitle {
     text-align: center;
+    font-size: 14px;
   }
   .main__slider {
     margin-bottom: 10px;
@@ -980,8 +1061,6 @@ ul li {
     grid-template-columns: 1fr;
   }
   .product__category-item {
-    max-width: 280px;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -993,10 +1072,49 @@ ul li {
     grid-template-columns: 1fr;
   }
   .popular-goods .card {
-    max-width: 280px;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .advantages__body {
+    margin-top: 50px;
+  }
+  .advantages__grid {
+    grid-template-columns: 1fr;
+  }
+  .advantages__item {
+    text-align: center;
+  }
+  .advantages__item-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .questions__body {
+    padding: 30px;
+  }
+  .questions__body .section__title {
+    font-size: 26px;
+  }
+  .feedback__item-content {
+    padding: 20px;
+  }
+  .feedback__item-author {
+    font-size: 18px;
+  }
+  .blog__body {
+    grid-template-columns: 1fr;
+  }
+  .blog__item {
+    gap: 15px;
+  }
+  .blog__item-title {
+    font-size: 18px;
+  }
+  .blog__item-photo {
+    height: unset;
+  }
+  .blog__item-photo img {
+    object-fit: contain;
   }
 }
 @media (max-width: 380px) {
@@ -1004,7 +1122,7 @@ ul li {
     padding: 30px 0;
   }
   .section__title {
-    font-size: 26px;
+    font-size: 24px;
   }
   .header__contacts {
     display: none;
