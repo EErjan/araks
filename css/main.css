@@ -56,7 +56,7 @@ ul li {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
   height: 8px;
 }
 
@@ -1051,6 +1051,46 @@ ul li {
 }
 .contacts .map {
   margin-top: 50px;
+}
+
+.modal-open {
+  padding-right: 0 !important;
+}
+
+.base-modal .modal-content {
+  border-radius: 12px;
+}
+.base-modal .close {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.base-modal .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.base-modal .form-group:last-child {
+  margin-bottom: 0;
+}
+.base-modal .modal-header {
+  border: none;
+}
+.base-modal .modal-footer {
+  border: none;
+}
+.base-modal .form-control {
+  width: 100%;
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 1px solid white !important;
+  color: var(--color-text) !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  font-size: 18px;
+  border-bottom: 1px solid var(--color-text) !important;
+}
+.base-modal .form-control::placeholder {
+  color: var(--color-text);
 }
 
 :root {
