@@ -91,6 +91,16 @@
       position: relative;
       z-index: 1;
 
+      &.active {
+        //.header__menu-link {
+        //  color: var(--color-main) !important;
+        //}
+        //
+        //&::before {
+        //  height: 100%;
+        //}
+      }
+
       &::before {
         content: "";
         position: absolute;
