@@ -138,31 +138,84 @@
         </a>
     </div>
 
-    <ul class="mobile-menu">
-        <li class="mobile-menu__item">
-            <a href="#!" class="mobile-menu__link">Главная</a>
+    <ul class="accordion" id="accordion">
+
+        <li class="accordion__list">
+            <div class="link">
+                <a href="#" class="link__title">Главная</a>
+            </div>
         </li>
 
-        <li class="mobile-menu__item">
-            <a href="#!" class="mobile-menu__link">О компании</a>
+        <li class="accordion__list">
+            <div class="link">
+                <a href="#" class="link__title">О компании</a>
+            </div>
         </li>
 
-        <li class="mobile-menu__item">
-            <a href="#!" class="mobile-menu__link">Продукты</a>
+        <li class="accordion__list">
+            <div class="link">
+                <span class="link__title">Продукты</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <ul class="submenu">
+                <li><a href="#!">Электрические продукции</a></li>
+                <li><a href="#!">Шпатели</a></li>
+                <li><a href="#!">Малярные валики</a></li>
+                <li><a href="#!">Малярные кисти</a></li>
+                <li><a href="#!">Металлические щетки</a></li>
+                <li><a href="#!">Мухоловка</a></li>
+            </ul>
         </li>
 
-        <li class="mobile-menu__item">
-            <a href="#!" class="mobile-menu__link">Галерея</a>
+        <li class="accordion__list">
+            <div class="link">
+                <a href="#" class="link__title">Галерея</a>
+            </div>
         </li>
 
-        <li class="mobile-menu__item">
-            <a href="#!" class="mobile-menu__link">Акции</a>
+        <li class="accordion__list">
+            <div class="link">
+                <a href="#" class="link__title">Акции</a>
+            </div>
         </li>
 
-        <li class="mobile-menu__item">
-            <a href="#!" class="mobile-menu__link">Контакты</a>
+        <li class="accordion__list">
+            <div class="link">
+                <a href="#" class="link__title">Контакты</a>
+            </div>
         </li>
+
     </ul>
+
+
+    <!--
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">Главная</a>
+            </li>
+
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">О компании</a>
+            </li>
+
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">Продукты</a>
+            </li>
+
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">Галерея</a>
+            </li>
+
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">Акции</a>
+            </li>
+
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">Контакты</a>
+            </li>
+        </ul>
+
+    -->
 
 </div>
 
@@ -935,15 +988,15 @@
 </footer>
 
 <script src="libs/jquery-3.2.1.min.js"></script>
-<script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
-<script src="libs/jquery.matchHeight.js"></script>
+<script defer src="libs/fancybox-master/jquery.fancybox.min.js"></script>
+<script defer src="libs/jquery.matchHeight.js"></script>
 <script src="libs/bootstrap/js/popper.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/aos/aos.js"></script>
-<script src="libs/inputMask.min.js"></script>
+<script defer src="libs/inputMask.min.js"></script>
 <script src="libs/splide-slider/js/splide.min.js"></script>
-<script src="libs/parallax/jquery.parallax.min.js"></script>
-<script src="js/main.js"></script>
+<script defer src="libs/parallax/jquery.parallax.min.js"></script>
+<script async src="js/main.js"></script>
 
 <script>
 
