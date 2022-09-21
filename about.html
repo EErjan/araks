@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/aos/aos.css">
+    <link rel="stylesheet" href="libs/font-awesome.min.css">
+</head>
+<body>
+
+<header class="header"
+>
+    <div class="container">
+        <div class="header__top"
+             data-aos="fade"
+             data-aos-easing="linear"
+             data-aos-duration="500"
+        >
+            <a href="./index.html" class="logo">
+                <img src="img/logo.jpg" alt="logo">
+            </a>
+
+            <div class="header__details">
+                <div class="header__contacts">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <p>call-центр:</p>
+                        <a href="tel:555012626">(55)-501-26-26</a>
+                    </div>
+
+
+                </div>
+
+                <a href="#!" class="btn-main">Заказать звонок</a>
+
+                <button class="hamburger-menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+            </div>
+        </div>
+        <div class="header__bottom"
+             data-aos="fade"
+             data-aos-easing="linear"
+             data-aos-duration="500"
+        >
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="./index.html" class="header__menu-link">
+                        Главная
+                    </a>
+                </li>
+
+                <li class="header__menu-item">
+                    <a href="./about.html" class="header__menu-link">
+                        О компании
+                    </a>
+                </li>
+
+                <li class="header__menu-item dropdown">
+                    <a href="./products" class="header__menu-link">
+                        Продукты
+                    </a>
+                    <div class="dropdown__content">
+                        <ul class="dropdown__content-inner">
+                            <li class="dropdown__item">
+                                <a href="./products.html" class="dropdown__link">
+                                    Электрический Продукции
+                                </a>
+                            </li>
+                            <li class="dropdown__item active">
+                                <a href="./products.html" class="dropdown__link">
+                                    Шпатели
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="./products.html" class="dropdown__link">
+                                    Малярные Валики
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="./products.html" class="dropdown__link">
+                                    Малярные Кисти
+                                </a>
+                            </li>
+
+                            <li class="dropdown__item">
+                                <a href="./products.html" class="dropdown__link">
+                                    Металлические Щетки
+                                </a>
+                            </li>
+
+                            <li class="dropdown__item">
+                                <a href="./products.html" class="dropdown__link">
+                                    Металлические Щетки
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="header__menu-item">
+                    <a href="./gallery.html" class="header__menu-link">
+                        Галерея
+                    </a>
+                </li>
+
+                <li class="header__menu-item">
+                    <a href="./sales.html" class="header__menu-link">
+                        Акции
+                    </a>
+                </li>
+
+                <li class="header__menu-item">
+                    <a href="./contacts.html" class="header__menu-link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="navigation__drawer">
+    <div class="navigation__drawer-details">
+        <a href="#!" class="btn-white">
+            Заказать звонок
+        </a>
+    </div>
+
+    <ul class="accordion" id="accordion">
+
+        <li class="accordion__list">
+            <div class="link">
+                <a href="#" class="link__title">Главная</a>
+            </div>
+        </li>
+
+        <li class="accordion__list">
+            <div class="link">
+                <a href="#" class="link__title">О компании</a>
+            </div>
+        </li>
+
+        <li class="accordion__list">
+            <div class="link">
+                <span class="link__title">Продукты</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <ul class="submenu">
+                <li><a href="#!">Электрические продукции</a></li>
+                <li><a href="#!">Шпатели</a></li>
+                <li><a href="#!">Малярные валики</a></li>
+                <li><a href="#!">Малярные кисти</a></li>
+                <li><a href="#!">Металлические щетки</a></li>
+                <li><a href="#!">Мухоловка</a></li>
+            </ul>
+        </li>
+
+        <li class="accordion__list">
+            <div class="link">
+                <a href="#" class="link__title">Галерея</a>
+            </div>
+        </li>
+
+        <li class="accordion__list">
+            <div class="link">
+                <a href="#" class="link__title">Акции</a>
+            </div>
+        </li>
+
+        <li class="accordion__list">
+            <div class="link">
+                <a href="#" class="link__title">Контакты</a>
+            </div>
+        </li>
+
+    </ul>
+
+
+    <!--
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">Главная</a>
+            </li>
+
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">О компании</a>
+            </li>
+
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">Продукты</a>
+            </li>
+
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">Галерея</a>
+            </li>
+
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">Акции</a>
+            </li>
+
+            <li class="mobile-menu__item">
+                <a href="#!" class="mobile-menu__link">Контакты</a>
+            </li>
+        </ul>
+
+    -->
+
+</div>
+
+<div class="backdrop">
+
+</div>
+
+<section class="section">
+    <div class="container">
+        <div class="section__top">
+            <h2 class="section__title"
+                data-aos="fade"
+                data-aos-easing="linear"
+                data-aos-duration="500"
+            >О компании</h2>
+            <h5 class="section__subtitle"
+                data-aos="fade"
+                data-aos-easing="linear"
+                data-aos-duration="500"
+            >Самые актуальные товары сезона по выгодным ценам</h5>
+        </div>
+
+        <div class="section__body ">
+
+<!--            <div class="content__photo">-->
+<!--                <img src="" alt="">-->
+<!--            </div>-->
+
+            <div class="content__text">
+                ООО “NEO STROY INVEST” начало свою деятельность и зарегистрировано государственным реестром от 17 марта
+                2015 года Чиланзарского района города Ташкента № 010711-08 и свидетельством о государственной
+                регистрации
+                юридических лиц № 010711-08.
+                <br><br>
+
+                ООО “NEO OSIYO GRAND” которое является вторым предприятием ООО “NEO STROY INVEST” в настоящее время
+                совместно производят 30 видов товаров и являеются одними из ведущих производителей электрических и
+                бытовых
+                товаров в стране.
+                <br><br>
+
+                ООО “NEO STROY INVEST” расположен по адресу: Чиланзарский район, окрестность Гулистан, дом 54-3.
+                Предприятие
+                производит различные виды строительной и электротехнической продукции как в Узбекистане, так и за
+                рубежом,
+                используя высокотехнологичные технологии.
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__column">
+                <div class="footer__item">
+                    <h5 class="footer__item-title"
+                        data-aos="fade"
+                        data-aos-easing="linear"
+                        data-aos-duration="500"
+                    >
+                        Режим работы:
+                    </h5>
+
+                    <p class="footer__item-text"
+                       data-aos="fade"
+                       data-aos-easing="linear"
+                       data-aos-duration="500"
+                    >
+                        Пн-Пт: с 09:00 до 17:00 <br>
+                        Суббота: с 11:00 до 15:00
+                    </p>
+                </div>
+
+                <div class="footer__item">
+                    <h5 class="footer__item-title"
+                        data-aos="fade"
+                        data-aos-easing="linear"
+                        data-aos-duration="500"
+                    >
+                        Мы находимся по адресу:
+                    </h5>
+
+                    <p class="footer__item-text"
+                       data-aos="fade"
+                       data-aos-easing="linear"
+                       data-aos-duration="500"
+                    >
+                        г. Москва, Ленинский проспект, дом, строение, номер кабинета
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer__column">
+                <div class="footer__item">
+                    <h5 class="footer__item-title"
+                        data-aos="fade"
+                        data-aos-easing="linear"
+                        data-aos-duration="500"
+                    >
+                        Call-центр
+                    </h5>
+
+                    <a href="tel:555012626"
+                       data-aos="fade"
+                       data-aos-easing="linear"
+                       data-aos-duration="500"
+                    >(55)-501-26-26</a>
+                </div>
+
+                <div class="footer__item">
+                    <h5 class="footer__item-title"
+                        data-aos="fade"
+                        data-aos-easing="linear"
+                        data-aos-duration="500"
+                    >
+                        Для писем и предложений:
+                    </h5>
+
+                    <a href="mailto:test@example.com"
+                       data-aos="fade"
+                       data-aos-easing="linear"
+                       data-aos-duration="500"
+                    >test@example.com</a>
+                </div>
+            </div>
+
+            <div class="footer__column">
+                <div class="footer__item">
+                    <h5 class="footer__item-title"
+                        data-aos="fade"
+                        data-aos-easing="linear"
+                        data-aos-duration="500"
+                    >
+                        Подписывайтесь в соц сетях:
+                    </h5>
+
+                    <ul class="footer__socials">
+                        <li class="footer__socials-item"
+                            data-aos="fade"
+                            data-aos-easing="linear"
+                            data-aos-duration="500"
+                        >
+                            <a href="#!" class="footer__socials-link">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                        <li class="footer__socials-item">
+                            <a href="#!" class="footer__socials-link"><i class="fa fa-paper-plane"
+                                                                         aria-hidden="true"></i></a>
+                        </li>
+
+                        <li class="footer__socials-item">
+                            <a href="#!" class="footer__socials-link">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="copyright">
+                Copyright © 2022 Название компании
+            </p>
+
+            <p> Разработка сайтов <a href="https://t.me/eerjan" target="_blank">Erjan Ergashev</a></p>
+        </div>
+    </div>
+
+</footer>
+
+<script src="libs/jquery-3.2.1.min.js"></script>
+<script src="libs/bootstrap/js/popper.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script async src="js/main.js"></script>
+
+</body>
+</html>

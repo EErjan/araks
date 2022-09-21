@@ -23,6 +23,14 @@
     }
   }
 
+  .gallery {
+    &__item {
+      img {
+        height: 220px;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -66,6 +74,18 @@
 
       &-photo {
         width: 100%;
+      }
+    }
+  }
+
+  .gallery {
+
+    &__body {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+      img {
       }
     }
   }
@@ -301,6 +321,18 @@
     }
   }
 
+  .gallery {
+
+    &__body {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+      img {
+        height: 180px;
+      }
+    }
+  }
 
 }
 
@@ -518,6 +550,20 @@
 
   .navigation__drawer {
     max-width: 80%;
+  }
+
+  .gallery {
+
+    &__body {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      img {
+        height: auto;
+        max-height: 300px;
+      }
+    }
   }
 
 }
