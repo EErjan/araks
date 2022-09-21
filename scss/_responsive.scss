@@ -334,6 +334,12 @@
     }
   }
 
+  .content {
+    &__photo {
+      margin-bottom: 30px;
+    }
+  }
+
 }
 
 @media (max-width: 650px) {

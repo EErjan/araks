@@ -952,13 +952,20 @@ ul li {
 }
 
 .content__photo {
-  max-width: 700px;
-  max-height: 500px;
+  display: flex;
+  align-items: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 .content__photo img {
+  max-width: 700px;
   width: 100%;
+  height: 100%;
   object-fit: contain;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 .content__text {
   font-size: 16px;
@@ -1303,6 +1310,9 @@ ul li {
   }
   .gallery__item img {
     height: 180px;
+  }
+  .content__photo {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 650px) {
