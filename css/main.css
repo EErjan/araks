@@ -807,7 +807,7 @@ ul li {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0 10px;
   width: 100%;
 }
@@ -1428,7 +1428,7 @@ ul li {
     object-fit: contain;
   }
   .navigation__drawer {
-    max-width: 80%;
+    max-width: 75%;
   }
   .gallery__body {
     grid-template-columns: 1fr;
