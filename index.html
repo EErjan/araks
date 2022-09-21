@@ -229,7 +229,7 @@
          data-aos-duration="500"
     >
 
-        <div class="splide main__slider" aria-label="Splide Basic HTML Example">
+        <div class="splide main__slider">
             <div class="splide__track">
                 <div class="splide__list">
                     <div class="splide__slide main__slider-item"
@@ -375,7 +375,7 @@
     </section>
 </div>
 
-<section class="section section__bg">
+<section class="section section__bg has-slider">
     <div class="container">
         <div class="section__top">
             <h2 class="section__title"
@@ -390,85 +390,108 @@
             >Самые актуальные товары сезона по выгодным ценам</h5>
         </div>
 
-        <div class="section__body popular-goods">
+        <div class="section__body">
+            <div class="splide popular__goods__slider base__slider">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide card"
+                             data-aos="fade"
+                             data-aos-easing="linear"
+                             data-aos-duration="500"
+                        >
+                            <div class="card__photo">
+                                <img src="img/product.png" alt="">
+                            </div>
 
-            <div class="card"
-                 data-aos="fade"
-                 data-aos-easing="linear"
-                 data-aos-duration="500"
-            >
-                <div class="card__photo">
-                    <img src="img/product.png" alt="">
-                </div>
+                            <div class="card__content">
+                                <h4>Макловица красная
+                                    “NEO” Размер №150/50</h4>
 
-                <div class="card__content">
-                    <h4>Макловица красная
-                        “NEO” Размер №150/50</h4>
+                                <p><b>185</b> руб./шт</p>
+                            </div>
 
-                    <p><b>185</b> руб./шт</p>
+                        </div>
 
-                    <a href="#call-to-action" data-toggle="modal" class="btn-main">Заказать</a>
-                </div>
-            </div>
-
-            <div class="card"
-                 data-aos="fade"
-                 data-aos-easing="linear"
-                 data-aos-duration="500"
-            >
-                <div class="card__photo">
-                    <img src="img/product.png" alt="">
-                </div>
-
-                <div class="card__content">
-                    <h4>Макловица красная
-                        “NEO” Размер №150/50</h4>
-
-                    <p><b>185</b> руб./шт</p>
-
-                    <a href="#call-to-action" data-toggle="modal" class="btn-main">Заказать</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="card"
-                 data-aos="fade"
-                 data-aos-easing="linear"
-                 data-aos-duration="500"
-            >
-                <div class="card__photo">
-                    <img src="img/product.png" alt="">
-                </div>
-
-                <div class="card__content">
-                    <h4>Макловица красная
-                        “NEO” Размер №150/50</h4>
-
-                    <p><b>185</b> руб./шт</p>
-
-                    <a href="#call-to-action" data-toggle="modal" class="btn-main">Заказать</a>
-                </div>
-            </div>
-
-            <div class="card"
-                 data-aos="fade"
-                 data-aos-easing="linear"
-                 data-aos-duration="500"
-            >
-                <div class="card__photo">
-                    <img src="img/product.png" alt="">
-                </div>
-
-                <div class="card__content">
-                    <h4>Макловица красная
-                        “NEO” Размер №150/50</h4>
-
-                    <p><b>185</b> руб./шт</p>
-
-                    <a href="#call-to-action" data-toggle="modal" class="btn-main">Заказать</a>
-                </div>
-            </div>
-
         </div>
+
+        <!--
+          <div class="section__body popular-goods">
+
+                    <div class="card"
+                         data-aos="fade"
+                         data-aos-easing="linear"
+                         data-aos-duration="500"
+                    >
+                        <div class="card__photo">
+                            <img src="img/product.png" alt="">
+                        </div>
+
+                        <div class="card__content">
+                            <h4>Макловица красная
+                                “NEO” Размер №150/50</h4>
+
+                            <p><b>185</b> руб./шт</p>
+                        </div>
+                    </div>
+
+                    <div class="card"
+                         data-aos="fade"
+                         data-aos-easing="linear"
+                         data-aos-duration="500"
+                    >
+                        <div class="card__photo">
+                            <img src="img/product.png" alt="">
+                        </div>
+
+                        <div class="card__content">
+                            <h4>Макловица красная
+                                “NEO” Размер №150/50</h4>
+
+                            <p><b>185</b> руб./шт</p>
+                        </div>
+                    </div>
+
+                    <div class="card"
+                         data-aos="fade"
+                         data-aos-easing="linear"
+                         data-aos-duration="500"
+                    >
+                        <div class="card__photo">
+                            <img src="img/product.png" alt="">
+                        </div>
+
+                        <div class="card__content">
+                            <h4>Макловица красная
+                                “NEO” Размер №150/50</h4>
+
+                            <p><b>185</b> руб./шт</p>
+                        </div>
+                    </div>
+
+                    <div class="card"
+                         data-aos="fade"
+                         data-aos-easing="linear"
+                         data-aos-duration="500"
+                    >
+                        <div class="card__photo">
+                            <img src="img/product.png" alt="">
+                        </div>
+
+                        <div class="card__content">
+                            <h4>Макловица красная
+                                “NEO” Размер №150/50</h4>
+
+                            <p><b>185</b> руб./шт</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                -->
+
     </div>
 </section>
 
@@ -534,6 +557,11 @@
             </div>
 
         </div>
+
+        <div class="section__bottom">
+            <a href="#" class="btn-main">Показать больше</a>
+        </div>
+
     </section>
 
     <section class="section advantages">
@@ -671,7 +699,7 @@
     </section>
 </div>
 
-<section class="section section__bg feedback">
+<section class="section section__bg has-slider feedback">
     <div class="container">
 
         <div class="section__top">
@@ -684,52 +712,59 @@
             </h2>
         </div>
 
-        <div class="section__body feedback__body">
-            <div class="feedback__item"
-                 data-aos="fade"
-                 data-aos-easing="linear"
-                 data-aos-duration="500"
-            >
-                <div class="feedback__item-content">
-                    <p>Спасибо огромное консультанту Сергею. Подробно разъяснил и помог выбрать товар! Рекомендую!</p>
+        <div class="section__body"></div>
+
+        <div class="splide feedback__slider base__slider">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide feedback__item"
+                         data-aos="fade"
+                         data-aos-easing="linear"
+                         data-aos-duration="500"
+                    >
+                        <div class="feedback__item-content">
+                            <p>Спасибо огромное консультанту Сергею. Подробно разъяснил и помог выбрать товар!
+                                Рекомендую!</p>
+                        </div>
+
+                        <h3 class="feedback__item-author">
+                            Желяев Андрей
+                        </h3>
+                    </div>
+
+                    <div class="splide__slide feedback__item"
+                         data-aos="fade"
+                         data-aos-easing="linear"
+                         data-aos-duration="500"
+                    >
+                        <div class="feedback__item-content">
+                            <p>Спасибо огромное консультанту Сергею. Подробно разъяснил и помог выбрать товар!
+                                Рекомендую!</p>
+                        </div>
+
+                        <h3 class="feedback__item-author">
+                            Желяев Андрей
+                        </h3>
+                    </div>
+
+                    <div class="splide__slide feedback__item"
+                         data-aos="fade"
+                         data-aos-easing="linear"
+                         data-aos-duration="500"
+                    >
+                        <div class="feedback__item-content">
+                            <p>Спасибо огромное консультанту Сергею. Подробно разъяснил и помог выбрать товар!
+                                Рекомендую!</p>
+                        </div>
+
+                        <h3 class="feedback__item-author">
+                            Желяев Андрей
+                        </h3>
+                    </div>
                 </div>
-
-                <h3 class="feedback__item-author">
-                    Желяев Андрей
-                </h3>
             </div>
-
-            <div class="feedback__item"
-
-                 data-aos="fade"
-                 data-aos-easing="linear"
-                 data-aos-duration="500"
-            >
-                <div class="feedback__item-content">
-                    <p>Хороший магазин. Товары качественные. Инструменты неплохие, от простых до профессиональных. Есть
-                        система заказов. Удобно. Советую.</p>
-                </div>
-
-                <h3 class="feedback__item-author">
-                    Авдеева Кристина
-                </h3>
-            </div>
-
-            <div class="feedback__item"
-                 data-aos="fade"
-                 data-aos-easing="linear"
-                 data-aos-duration="500"
-            >
-                <div class="feedback__item-content">
-                    <p>Цены - скромные, качество - отличное. Придраться не к чему. Еще один плюс в Вашу копилку.</p>
-                </div>
-
-                <h3 class="feedback__item-author">
-                    Брусницина Евгения
-                </h3>
-            </div>
-
         </div>
+
 
     </div>
 </section>
@@ -825,6 +860,11 @@
                 </div>
             </div>
         </div>
+
+        <div class="section__bottom">
+            <a href="#" class="btn-main">Показать больше</a>
+        </div>
+
     </section>
 
     <section class="section about">
@@ -1009,14 +1049,72 @@
         let main__slider = new Splide('.main__slider', {
             type: 'loop',
             arrows: true,
-            // autoplay: 'true',
-            interval: 5000,
+            autoplay: true,
+            interval: 7000,
+            pauseOnHover: true,
             gap: 30
         });
 
         main__slider.mount();
 
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let feedback__slider = new Splide('.feedback__slider', {
+            type: 'loop',
+            arrows: true,
+            perPage: 3,
+            autoplay: true,
+            pagination: false,
+            interval: 7000,
+            gap: 30,
+            pauseOnHover: true,
+            breakpoints: {
+                991: {
+                    perPage: 2,
+                },
+
+                768: {
+                    perPage: 1,
+                },
+            }
+        });
+
+        feedback__slider.mount();
+
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let popular__goods__slider = new Splide('.popular__goods__slider', {
+            type: 'loop',
+            arrows: true,
+            perPage: 4,
+            autoplay: true,
+            pagination: false,
+            interval: 7000,
+            gap: 30,
+            pauseOnHover: true,
+            breakpoints: {
+
+                1200: {
+                    perPage: 3,
+                },
+
+                991: {
+                    perPage: 2,
+                    gap: 20
+                },
+
+                450: {
+                    perPage: 1,
+                },
+            }
+        });
+
+        popular__goods__slider.mount();
+
+    });
+
 </script>
 
 </body>
