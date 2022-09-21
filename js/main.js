@@ -60,15 +60,12 @@ try {
             //Parametro inicial que permite ver 1 solo submenu abierto
             if (!e.data.multiple) {
                 $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-                $el.find('.submenu2').not($next).slideUp().parent().removeClass('open');
                 $el.find('.accordion__content').not($next).slideUp().parent().removeClass('open');
-                $el.find('.accordion__content2').not($next).slideUp().parent().removeClass('open');
             }
 
         }
         // Elegir submenus multiples (true) submenus uno a la vez (false)
         var accordion = new Accordion($('#accordion'), false);
-        var accordion = new Accordion($('#accordion-2'), false);
     });
 } catch (e) {
 

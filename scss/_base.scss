@@ -3,6 +3,8 @@
   z-index: 2;
 
   &__top {
+    position: relative;
+    z-index: 2;
     padding: 20px 0;
     display: flex;
     align-items: center;
@@ -20,9 +22,8 @@
     margin-right: 50px;
 
     .fa {
-      font-size: 22px;
+      font-size: 18px;
       margin-right: 15px;
-      color: var(--color-main);
     }
 
     p {
@@ -170,6 +171,57 @@
       font-size: 16px;
     }
   }
+
+  &__search {
+    margin-right: 50px;
+
+    input {
+      box-shadow: none !important;
+      outline: none !important;
+      border: 1px solid var(--color-border) !important;
+      border-bottom-left-radius: 12px !important;
+      border-top-left-radius: 12px !important;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .input-group-append {
+      .input-group-text {
+        border: 1px solid var(--color-border) !important;
+        background-color: transparent;
+        border-bottom-right-radius: 12px !important;
+        border-top-right-radius: 12px !important;
+      }
+    }
+  }
+
+  &__languages {
+    margin-right: 50px;
+    position: relative;
+    z-index: 10;
+
+    .dropdown {
+
+      &__header {
+        .fa {
+          margin-right: 5px;
+          font-size: 16px;
+        }
+      }
+
+      &__content {
+
+        &-inner {
+          border-radius: 12px;
+        }
+
+        padding-top: 10px;
+        z-index: 10;
+        width: unset;
+      }
+    }
+  }
+
 }
 
 .dropdown {
@@ -184,6 +236,11 @@
       visibility: visible;
       transform: translateY(0px);
     }
+  }
+
+  &__header {
+    font-size: 16px;
+    margin-bottom: 0;
   }
 
   &__content {
@@ -203,6 +260,7 @@
       border-bottom-right-radius: 12px;
       overflow-y: hidden;
       padding: 10px 0;
+      box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
     }
   }
 
@@ -261,7 +319,7 @@
     color: var(--color-main);
     background-color: white !important;
     transition: .3s all ease;
-    border: 1px solid transparent;
+    border: 1px solid white;
 
     &:hover {
       border-color: white;
@@ -1050,6 +1108,15 @@
 
   &-details {
     margin-bottom: 30px;
+
+    .languages {
+      display: none;
+    }
+
+    .header__search {
+      display: none;
+    }
+
   }
 }
 
@@ -1071,6 +1138,7 @@
   }
 
   .submenu {
+    display: none;
     padding: 5px 15px;
     margin: 10px 0;
     background-color: rgba(0, 0, 0, 0.15);
