@@ -1093,6 +1093,20 @@ ul li {
   color: var(--color-text);
 }
 
+.pagination {
+  margin-top: 30px;
+  overflow: hidden;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+}
+.pagination .page-item a {
+  padding: 10px 15px !important;
+  font-size: 18px;
+  color: var(--color-text);
+  border: none !important;
+}
+
 :root {
   --color-main: #340c6f;
   --color-secondary: #0089e1;
