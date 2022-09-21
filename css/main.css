@@ -70,6 +70,10 @@ ul li {
   background: var(--color-main);
 }
 
+.header {
+  position: relative;
+  z-index: 2;
+}
 .header__top {
   padding: 20px 0;
   display: flex;
@@ -138,19 +142,11 @@ ul li {
   margin-bottom: 0;
   position: relative;
 }
-.header__menu-item:first-child {
-  margin-left: -25px;
-}
-.header__menu-link {
+.header__menu-item {
   position: relative;
-  color: white !important;
-  padding: 20px 15px;
-  display: inline-flex;
-  transition: 0.3s all linear;
-  font-weight: 500;
   z-index: 1;
 }
-.header__menu-link::before {
+.header__menu-item::before {
   content: "";
   position: absolute;
   height: 0;
@@ -162,11 +158,87 @@ ul li {
   transition: 0.3s all ease;
   z-index: -1 !important;
 }
-.header__menu-link:hover {
+.header__menu-item:hover .header__menu-link {
   color: var(--color-main) !important;
 }
-.header__menu-link:hover::before {
+.header__menu-item:hover::before {
   height: 100%;
+}
+.header__menu-item:first-child {
+  margin-left: -25px;
+}
+.header__menu-item.dropdown {
+  position: relative;
+  transition: 0s !important;
+}
+.header__menu-item.dropdown:hover .header__menu-link::before {
+  color: var(--color-main);
+}
+.header__menu-item.dropdown .header__menu-link::before {
+  content: "\f107";
+  margin-left: 7px;
+  font-family: "FontAwesome";
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: white;
+  order: 2;
+}
+.header__menu-item.dropdown .dropdown__content {
+  transition: 0s !important;
+}
+.header__menu-item.dropdown__item.active .dropdown__link {
+  color: var(--color-main);
+}
+.header__menu-link {
+  position: relative;
+  color: white !important;
+  padding: 20px 15px;
+  display: inline-flex;
+  transition: 0.3s all linear;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.dropdown {
+  display: inline-block;
+  transition: all 0.3s ease;
+  list-style-type: none;
+}
+.dropdown:hover .dropdown__content {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+.dropdown__content {
+  z-index: -1;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateY(15px);
+  cursor: default;
+  padding: 0;
+  width: 230px;
+}
+.dropdown__content-inner {
+  background-color: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow-y: hidden;
+  padding: 10px 0;
+}
+.dropdown__link {
+  display: flex;
+  width: 100%;
+  padding: 5px 15px;
+  color: var(--color-main) !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+.dropdown__link:hover {
+  text-decoration: underline !important;
 }
 
 .hamburger-menu {
