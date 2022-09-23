@@ -837,6 +837,14 @@ ul li {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+.about .map {
+  margin-top: 50px;
+}
+.about .map iframe {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 .footer {
   background-color: #f7f7f7;
 }
