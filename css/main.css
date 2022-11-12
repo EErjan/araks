@@ -1084,7 +1084,7 @@ ul li {
 .gallery__item {
   width: 100%;
 }
-.gallery__item img {
+.gallery__item img, .gallery__item iframe {
   width: 100%;
   height: 280px;
   border-radius: 12px;
